@@ -3,8 +3,6 @@ name: Upload Website
 on:
   push:
     branches: [develop]
-  pull_request:
-    branches: [develop]
 
 jobs:
   Deploy:
@@ -18,6 +16,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: jest/ react testing library test
+        run: npm run test
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          build: npm run build
+          start: npm start
 
       - name: Build static file
         run: npm run build
