@@ -1,8 +1,6 @@
-name: Upload Website
+name: Master pull request- run jest/react testing library test
 
 on:
-  push:
-    branches: [master]
   pull_request:
     branches: [master]
 
