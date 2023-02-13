@@ -27,7 +27,7 @@ function App() {
       <WrittenLogo />
 
       <button onClick={() => dispatch(consoleLog({ name: "jim" }))}>
-        Updated for AWS!!! Test cypress
+        Deploy to development s3 bucket
       </button>
     </div>
   );
