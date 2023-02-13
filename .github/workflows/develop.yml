@@ -1,11 +1,8 @@
 name: Upload Website
 
 on:
-  push:
+  merge:
     branches: [develop]
-  pull_request:
-    branches: [develop]
-
 jobs:
   Deploy:
     runs-on: ubuntu-latest
