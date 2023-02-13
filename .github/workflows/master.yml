@@ -24,6 +24,11 @@ jobs:
           cache: "npm"
       - run: npm i
       - run: npm run test
+  on:
+    merge:
+      branches: [master]
+
+  jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
