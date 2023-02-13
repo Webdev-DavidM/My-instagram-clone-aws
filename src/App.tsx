@@ -27,7 +27,7 @@ function App() {
       <WrittenLogo />
 
       <button onClick={() => dispatch(consoleLog({ name: "jim" }))}>
-        master updated
+        develop updated
       </button>
     </div>
   );
