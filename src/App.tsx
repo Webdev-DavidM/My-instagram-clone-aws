@@ -27,7 +27,7 @@ function App() {
       <WrittenLogo />
 
       <button onClick={() => dispatch(consoleLog({ name: "jim" }))}>
-        Deploy to development s3 bucket
+        master updated again withg text
       </button>
     </div>
   );
