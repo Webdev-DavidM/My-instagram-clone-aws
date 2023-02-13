@@ -27,7 +27,7 @@ function App() {
       <WrittenLogo />
 
       <button onClick={() => dispatch(consoleLog({ name: "jim" }))}>
-        Updated for AWS!!!
+        Updated for AWS!!! for now
       </button>
     </div>
   );
